@@ -23,63 +23,75 @@ Need:
 
 ## Core Features
 In Scope:
-1. Image Upload as Input:
-- Users can upload a reference picture as tattoo inspiration.
-- Encouraged to upload clear, non-abstract images to help guide the generation.
-2. Concrete Tattoo Generation
-- Use an API (most likely Midjourney) to generate one concrete tattoo design per input.
-- Leverage a pre-trained model or fine-tuned model for generating tattoo-style artwork.
-3. Tattoo Preview & Download
-- Allow users to preview the generated tattoo on-screen.
-- Provide options to download the tattoo image for personal use or printing.
+1. Concrete Tattoo Generation
+- Use an API to generate one concrete tattoo design per input.
+- Allow users to download. 
+2. Tattoo Gallery
+- Allow users to browse for ideas, like and save. Eventually building a community
+- Under different categories.
+3. Find Nearby Tattoo Stores
+- Find nearby tattoo stores based on location identified. 
 
 Nice to Have:
 1. Multiple Tattoo Variants from One prompt
 - Increase the number of tattoos generated per upload (e.g. 3–5 variations).
 - Give users more options to choose from.
+- Extra adjustment and finetuning
 2. Style-Based Categorization
 - Classify generated tattoos into recognizable styles (e.g. minimal, tribal, neo-traditional, fine line).
 - Users can toggle between styles before generating, or filter results after generation.
+3. User Login
+4. Booking system
 
 ## Expected outcome
 - A fully functional web app where users can input preferences and receive personalized tattoo design suggestions.
 - Users can interact with generated designs, preview placements, and save or share them.
 - A user-friendly, aesthetic platform that sparks creativity and enhances the tattoo planning experience.
 
-## Timeline
-Week 1: Planning & Research
-Finalize feature scope and technical requirements.
-Research suitable GenAI APIs.
-Sketch out UI wireframes and user flow.
+## Getting Started
 
-Week 2: Backend Setup & API Integration
-Set up a backend environment.
-Implement image upload and validation.
-Connect to image generation API and test with prompts.
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm or yarn
 
-Week 3: Frontend Development
-Build basic frontend for uploading images, displaying previews, and downloading tattoos.
+### Installation
 
-Week 4: Improve Generation Quality
-Refine prompt templates for consistent tattoo aesthetics.
-Add upload handling for bad inputs or edge cases.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/TECHIN510_TattooGenerator.git
+   cd TECHIN510_TattooGenerator
+   ```
 
-Week 5: Nice-to-Have Features (Time Permitting)
-Enable multiple tattoo variations.
-Add basic style categorization or filters.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Week 6: Testing, Optimization, & Polish
-End-to-end testing of user flow.
-Optimize performance and finalize UI.
+3. **Set up environment variables:**
+   - Create a `.env` file in the root directory and another in the `server/` directory if needed.
+   - Add your API keys and secrets (e.g., OpenAI, Google Maps) as environment variables:
+     ```env
+     OPENAI_API_KEY=your_openai_key
+     GOOGLE_MAPS_API_KEY=your_google_maps_key
+     ```
 
-Week 7–8: Beta Testing & Iteration (Optional)
-Share with test users for feedback.
-Polish UX and address bugs.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Access the application:**
+   - Open your browser and go to `http://localhost:3000` (or the port specified in your terminal) to use the app.
 
 ## Contact information of the team
 - Product Manager/ Client: Laura Tan, xtan0611@uw.edu
 - Developer: Hannah Xiao, hx2313@uw.edu
 
+<<<<<<< HEAD
 ## Progress Update (as of May 16)
 Developed three functional tabs:
 - Text Input: Users can type in their tattoo ideas and select preferred styles.
@@ -87,4 +99,6 @@ Developed three functional tabs:
 - Gallery: A brand-new feature that allows users to browse a curated tattoo gallery with artist names and like counts.
 - Implemented interactive UI elements with clean navigation and dynamic visual feedback.
 - Designed consistent layout and styling across all pages for a smoother user experience.
+=======
+>>>>>>> d1754f4 (final)
 
