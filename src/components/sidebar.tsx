@@ -12,6 +12,7 @@ import TextFieldsIcon from "@mui/icons-material/TextFields";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import ImageIcon from "@mui/icons-material/Image";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ReactLogo from "../assets/icon.svg?react";
@@ -62,19 +63,19 @@ const Sidebar = () => {
             <ListItemIcon sx={{ color: "#fff" }}>
               <TextFieldsIcon />
             </ListItemIcon>
-            <ListItemText primary="Text" />
-          </ListItemButton>
-          <ListItemButton onClick={() => navigate("/upload-photo")}>
-            <ListItemIcon sx={{ color: "#fff" }}>
-              <CloudUploadIcon />
-            </ListItemIcon>
-            <ListItemText primary="Upload" />
+            <ListItemText primary="Create" />
           </ListItemButton>
           <ListItemButton onClick={() => navigate("/browse-ideas")}>
             <ListItemIcon sx={{ color: "#fff" }}>
               <ImageIcon />
             </ListItemIcon>
             <ListItemText primary="Gallery" />
+          </ListItemButton>
+          <ListItemButton onClick={() => navigate("/locations")}>
+            <ListItemIcon sx={{ color: "#fff" }}>
+              <LocationOnIcon />
+            </ListItemIcon>
+            <ListItemText primary="Locations" />
           </ListItemButton>
         </List>
       </Box>

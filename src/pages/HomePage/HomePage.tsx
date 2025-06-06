@@ -46,12 +46,12 @@ const HomePage = () => {
             },
           }}
         >
-          Text in your idea
+          Generate Designs
         </Button>
 
         <Button
           variant="contained"
-          onClick={() => navigate("/upload-photo")}
+          onClick={() => navigate("/browse-ideas")}
           sx={{
             backgroundColor: "#ff6584",
             color: "#fff",
@@ -65,26 +65,26 @@ const HomePage = () => {
             },
           }}
         >
-          Upload a photo
+          Browse Gallery
         </Button>
 
         <Button
-          variant="outlined"
-          onClick={() => navigate("/browse-ideas")}
+          variant="contained"
+          onClick={() => navigate("/locations")}
           sx={{
+            backgroundColor: "#249e8c",
             color: "#fff",
-            borderColor: "#ccc",
             padding: "12px 24px",
             borderRadius: "20px",
             fontSize: "1rem",
             textTransform: "none",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
             "&:hover": {
-              borderColor: "#fff",
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              backgroundColor: "#19796a",
             },
           }}
         >
-          Browse Ideas
+          Find Locations
         </Button>
       </Stack>
     </Box>
